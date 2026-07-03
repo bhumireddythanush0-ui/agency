@@ -906,6 +906,7 @@ h1{font-size:clamp(56px,5.5vw,78px);line-height:1.08;letter-spacing:-3px;font-we
   color:#555;
   font-weight:500;
 }
+
 .services-grid{
     max-width:1180px;
     margin:auto;
@@ -926,9 +927,9 @@ h1{font-size:clamp(56px,5.5vw,78px);line-height:1.08;letter-spacing:-3px;font-we
     border:1px solid rgba(255,255,255,.85);
     box-shadow:0 18px 40px rgba(0,0,0,.08);
     transition:.35s;
-    height:380px;
+    height:auto;
+    min-height:380px;
 }
-
 .service-card:hover{
     transform:translateY(-10px);
     box-shadow:0 28px 60px rgba(0,0,0,.12);
@@ -1435,6 +1436,49 @@ h1{font-size:clamp(56px,5.5vw,78px);line-height:1.08;letter-spacing:-3px;font-we
 @media(max-width:900px){
   .investor-grid{
     grid-template-columns:1fr;
+  }
+
+  .services-grid{
+    grid-template-columns:1fr;
+    gap:28px;
+    padding:0 18px;
+  }
+
+  .service-card{
+    width:100%;
+    max-width:420px;
+    margin:0 auto;
+    height:auto;
+    min-height:unset;
+    border-radius:26px;
+  }
+
+  .service-card img{
+    height:210px;
+  }
+
+  .service-card div{
+    padding:22px;
+  }
+
+  .service-card h3{
+    font-size:26px;
+    line-height:1.15;
+    margin-bottom:12px;
+  }
+
+  .service-card p{
+    font-size:16px;
+    line-height:1.55;
+  }
+
+  .big-card{
+    height:auto;
+    min-height:unset;
+  }
+
+  .big-card img{
+    height:210px;
   }
 }
 
